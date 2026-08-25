@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+        name="theme-color"
+        content="#0b1220"
+    />
+
+    <title>
+        CA Inter Revision
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    />
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HOME SCREEN
+===================================================== -->
+
+<div
+    id="homeScreen"
+    class="home-screen"
+>
+
+
+    <!-- HOME HEADER -->
+
+    <div class="home-header">
+
+        <div class="home-brand">
+
+            <div class="home-logo">
+                CA
+            </div>
+
+            <div>
+
+                <h1>
+                    CA Inter Revision
+                </h1>
+
+                <p>
+                    Your complete exam revision system
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         GROUP I
+    ================================================== -->
+
+    <div class="group-section">
+
+        <div class="group-title">
+
+            <span>
+                GROUP I
+            </span>
+
+        </div>
+
+
+        <div class="paper-grid">
+
+
+            <!-- PAPER 1 -->
+
+            <button
+                class="paper-card"
+                onclick="openPaper('paper1')"
+            >
+
+                <div class="paper-number">
+                    01
+                </div>
+
+                <div class="paper-icon">
+                    📘
+                </div>
+
+                <h3>
+                    Advanced Accounting
+                </h3>
+
+                <p>
+                    Paper 1
+                </p>
+
+            </button>
+
+
+
+            <!-- PAPER 2 -->
+
+            <button
+                class="paper-card"
+                onclick="openPaper('paper2')"
+            >
+
+                <div class="paper-number">
+                    02
+                </div>
+
+                <div class="paper-icon">
+                    ⚖️
+                </div>
+
+                <h3>
+                    Corporate & Other Laws
+                </h3>
+
+                <p>
+                    Paper 2
+                </p>
+
+            </button>
+
+
+
+            <!-- PAPER 3 -->
+
+            <button
+                class="paper-card"
+                onclick="openPaper('paper3')"
+            >
+
+                <div class="paper-number">
+                    03
+                </div>
+
+                <div class="paper-icon">
+                    🧾
+                </div>
+
+                <h3>
+                    Taxation
+                </h3>
+
+                <p>
+                    Income Tax + GST
+                </p>
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         GROUP II
+    ================================================== -->
+
+    <div class="group-section">
+
+        <div class="group-title">
+
+            <span>
+                GROUP II
+            </span>
+
+        </div>
+
+
+        <div class="paper-grid">
+
+
+            <!-- PAPER 4 -->
+
+            <button
+                class="paper-card"
+                onclick="openPaper('paper4')"
+            >
+
+                <div class="paper-number">
+                    04
+                </div>
+
+                <div class="paper-icon">
+                    📊
+                </div>
+
+                <h3>
+                    Cost & Management Accounting
+                </h3>
+
+                <p>
+                    Paper 4
+                </p>
+
+            </button>
+
+
+
+            <!-- PAPER 5 -->
+
+            <button
+                class="paper-card"
+                onclick="openPaper('paper5')"
+            >
+
+                <div class="paper-number">
+                    05
+                </div>
+
+                <div class="paper-icon">
+                    🔍
+                </div>
+
+                <h3>
+                    Auditing & Ethics
+                </h3>
+
+                <p>
+                    Paper 5
+                </p>
+
+            </button>
+
+
+
+            <!-- PAPER 6 -->
+
+            <button
+                class="paper-card"
+                onclick="openPaper('paper6')"
+            >
+
+                <div class="paper-number">
+                    06
+                </div>
+
+                <div class="paper-icon">
+                    💰
+                </div>
+
+                <h3>
+                    Financial Management
+                    & Strategic Management
+                </h3>
+
+                <p>
+                    Paper 6
+                </p>
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     PAPER 6 SELECTION
+===================================================== -->
+
+<div
+    id="paper6Screen"
+    class="selection-screen hidden"
+>
+
+
+    <button
+        class="back-button"
+        onclick="goHome()"
+    >
+        ← Back to Home
+    </button>
+
+
+    <div class="selection-header">
+
+
+        <div class="selection-icon">
+            06
+        </div>
+
+
+        <div>
+
+            <div class="section-kicker">
+                PAPER 6
+            </div>
+
+            <h1>
+                Financial Management
+                & Strategic Management
+            </h1>
+
+            <p>
+                Select the section you want to study.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="section-selection-grid">
+
+
+        <!-- FM -->
+
+        <button
+            class="section-selection-card"
+            onclick="openChapterSelection(CA_SUBJECTS.fm)"
+        >
+
+            <div class="selection-card-icon">
+                💰
+            </div>
+
+            <h2>
+                Financial Management
+            </h2>
+
+            <p>
+                Paper 6A
+            </p>
+
+            <span>
+                Open Financial Management →
+            </span>
+
+        </button>
+
+
+
+        <!-- SM -->
+
+        <button
+            class="section-selection-card"
+            onclick="openChapterSelection(CA_SUBJECTS.sm)"
+        >
+
+            <div class="selection-card-icon">
+                🧠
+            </div>
+
+            <h2>
+                Strategic Management
+            </h2>
+
+            <p>
+                Paper 6B
+            </p>
+
+            <span>
+                Open Strategic Management →
+            </span>
+
+        </button>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     UNIVERSAL SUBJECT SCREEN
+
+     script.js also creates this automatically.
+     Keeping this here makes the HTML structure explicit.
+===================================================== -->
+
+<div
+    id="universalSubjectScreen"
+    class="selection-screen hidden"
+>
+
+
+    <button
+        class="back-button"
+        onclick="goHome()"
+    >
+        ← Back to Home
+    </button>
+
+
+    <div class="selection-header">
+
+
+        <div class="selection-icon">
+            📚
+        </div>
+
+
+        <div>
+
+            <div
+                class="section-kicker"
+                id="universalSubjectKicker"
+            >
+                SUBJECT
+            </div>
+
+
+            <h1
+                id="universalSubjectTitle"
+            >
+                Select Subject
+            </h1>
+
+
+            <p
+                id="universalSubjectDescription"
+            >
+                Select the section you want to study.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div
+        id="universalSubjectGrid"
+        class="section-selection-grid"
+    ></div>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     UNIVERSAL CHAPTER SCREEN
+===================================================== -->
+
+<div
+    id="universalChapterScreen"
+    class="selection-screen hidden"
+>
+
+
+    <button
+        class="back-button"
+        id="universalChapterBack"
+    >
+        ← Back
+    </button>
+
+
+    <div class="selection-header">
+
+
+        <div class="selection-icon">
+            📚
+        </div>
+
+
+        <div>
+
+            <div
+                class="section-kicker"
+                id="universalChapterKicker"
+            >
+                CHAPTERS
+            </div>
+
+
+            <h1
+                id="universalChapterTitle"
+            >
+                Select Chapter
+            </h1>
+
+
+            <p
+                id="universalChapterDescription"
+            >
+                Select the chapter you want to study.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div
+        id="universalChapterGrid"
+        class="section-selection-grid"
+    ></div>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     CHAPTER APPLICATION
+===================================================== -->
+
+<div
+    id="fmApp"
+    class="app-shell hidden"
+>
+
+
+    <!-- =================================================
+         SIDEBAR
+    ================================================== -->
+
+    <aside
+        class="sidebar"
+        id="sidebar"
+    >
+
+
+        <div class="brand">
+
+
+            <div class="brand-mark">
+                CA
+            </div>
+
+
+            <div>
+
+                <div class="brand-title">
+                    CA Inter Notes
+                </div>
+
+
+                <div class="brand-subtitle">
+                    Paper 6A • Financial Management
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- CURRENT CHAPTER -->
+
+        <div class="chapter-card">
+
+
+            <div class="chapter-label">
+                CURRENT CHAPTER
+            </div>
+
+
+            <div
+                class="chapter-title"
+            >
+                Chapter 1
+            </div>
+
+
+            <div
+                class="chapter-name"
+            >
+                Scope & Objectives
+                of Financial Management
+            </div>
+
+
+        </div>
+
+
+
+        <div class="sidebar-section-title">
+            Study navigation
+        </div>
+
+
+        <div
+            class="topic-list"
+            id="topicList"
+        ></div>
+
+
+
+        <div class="sidebar-footer">
+
+
+            <div class="footer-note">
+                Built for final revision
+                • ICAI-based
+            </div>
+
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- =================================================
+         MAIN CONTENT
+    ================================================== -->
+
+    <main class="main">
+
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+
+            <button
+                class="icon-btn mobile-only"
+                id="menuBtn"
+                title="Open navigation"
+            >
+                ☰
+            </button>
+
+
+            <div class="page-heading">
+
+
+                <div
+                    class="crumb"
+                >
+                    Paper 6A /
+                    Financial Management /
+                    Chapter 1
+                </div>
+
+
+                <h1>
+                    Scope and Objectives
+                    of Financial Management
+                </h1>
+
+
+                <p>
+                    Full study notes,
+                    conceptual revision,
+                    formulae and
+                    integrated chapter story.
+                </p>
+
+
+            </div>
+
+
+            <div class="top-actions">
+
+
+                <button
+                    class="icon-btn"
+                    id="focusBtn"
+                    title="Focus mode"
+                >
+                    ⛶
+                </button>
+
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- =================================================
+             TABS
+        ================================================== -->
+
+        <nav
+            class="tabs"
+            aria-label="Chapter sections"
+        >
+
+
+            <button
+                class="tab active"
+                data-section="study"
+            >
+                📖 Study
+            </button>
+
+
+            <button
+                class="tab"
+                data-section="concepts"
+            >
+                🧠 Concepts
+            </button>
+
+
+            <button
+                class="tab"
+                data-section="formulae"
+            >
+                📐 Formulae
+            </button>
+
+
+            <button
+                class="tab"
+                data-section="story"
+            >
+                🧠 Chapter Story
+            </button>
+
+
+            <button
+                class="tab"
+                data-section="mindmap"
+            >
+                🗺️ Mind Map
+            </button>
+
+
+        </nav>
+
+
+
+        <!-- =================================================
+             STUDY
+        ================================================== -->
+
+        <section
+            id="studySection"
+            class="section active-section"
+        >
+
+
+            <div class="section-head">
+
+
+                <div>
+
+                    <div class="section-kicker">
+                        FULL CHAPTER
+                    </div>
+
+
+                    <h2>
+                        📖 Study
+                    </h2>
+
+
+                    <p>
+                        Detailed,
+                        exam-oriented notes
+                        following the chapter sequence.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <div
+                id="studyContent"
+            ></div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             CONCEPTS
+        ================================================== -->
+
+        <section
+            id="conceptsSection"
+            class="section"
+        >
+
+
+            <div class="section-head">
+
+
+                <div>
+
+                    <div class="section-kicker">
+                        FAST RECALL
+                    </div>
+
+
+                    <h2>
+                        🧠 Concepts
+                    </h2>
+
+
+                    <p>
+                        Compressed conceptual
+                        framework without losing
+                        technical terminology.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <div
+                id="conceptsContent"
+            ></div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             FORMULAE
+        ================================================== -->
+
+        <section
+            id="formulaeSection"
+            class="section"
+        >
+
+
+            <div class="section-head">
+
+
+                <div>
+
+                    <div class="section-kicker">
+                        KEY RELATIONSHIPS
+                    </div>
+
+
+                    <h2>
+                        📐 Formulae
+                    </h2>
+
+
+                    <p>
+                        All relationships appearing
+                        in this chapter.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <div
+                id="formulaeContent"
+            ></div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             STORY
+        ================================================== -->
+
+        <section
+            id="storySection"
+            class="section"
+        >
+
+
+            <div
+                class="section-head story-head"
+            >
+
+
+                <div>
+
+                    <div class="section-kicker">
+                        INTEGRATED CASE
+                    </div>
+
+
+                    <h2>
+                        🧠 Chapter Story
+                    </h2>
+
+
+                    <p>
+                        A complete business case
+                        connecting the chapter concepts.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="secondary-btn"
+                    id="storyPrintBtn"
+                >
+                    🖨 Print Story
+                </button>
+
+
+            </div>
+
+
+            <article
+                id="storyContent"
+                class="story-layout"
+            ></article>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             MIND MAP
+        ================================================== -->
+
+        <section
+            id="mindmapSection"
+            class="section"
+        >
+
+
+            <div class="section-head">
+
+
+                <div>
+
+                    <div class="section-kicker">
+                        CHAPTER REVISION MAP
+                    </div>
+
+
+                    <h2>
+                        🗺️ Mind Map
+                    </h2>
+
+
+                    <p>
+                        Expand each branch
+                        to revise the complete
+                        chapter structure.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div
+                class="mindmap-controls"
+            >
+
+
+                <button
+                    class="secondary-btn"
+                    id="expandMindMap"
+                >
+                    Expand All
+                </button>
+
+
+                <button
+                    class="secondary-btn"
+                    id="collapseMindMap"
+                >
+                    Collapse All
+                </button>
+
+
+            </div>
+
+
+
+            <div
+                id="mindmapContent"
+                class="mindmap-content"
+            ></div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             FOOTER
+        ================================================== -->
+
+        <footer
+            class="app-footer"
+        >
+
+
+            <span>
+                CA Inter • Paper 6A • Financial Management
+            </span>
+
+
+            <span>
+                Chapter 1
+            </span>
+
+
+        </footer>
+
+
+    </main>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     ONLY SCRIPT REQUIRED
+===================================================== -->
+
+<script
+    src="./script.js"
+></script>
+
+
+</body>
+
+</html>
